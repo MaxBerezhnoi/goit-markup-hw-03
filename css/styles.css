@@ -118,9 +118,27 @@ body {
 .contacts a:focus {
   color: var(--accent-color);
 }
-.contacts span {
+.contacts-footer {
+  margin-left: 215px;
+}
+.contacts-footer a {
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.714;
+
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+.contacts-footer span {
   color: var(--main-title-color);
 }
+.contacts-footer a:hover,
+.contacts-footer a:focus {
+  color: var(--accent-color);
+}
+
 button {
   cursor: pointer;
 }
@@ -158,11 +176,12 @@ button {
 
 .differences {
   display: flex;
+  margin-left: 215px;
+  margin-right: 215px;
 }
 
 .differences .item:not(:last-child) {
   margin-right: 30px;
-  justify-items: center;
 }
 
 h2 {
@@ -198,6 +217,26 @@ h4 {
 
   color: var(--second-title-color);
 }
+.activites {
+  display: flex;
+  margin-left: 215px;
+  margin-right: 215px;
+}
+
+.activites .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.our-command {
+  display: flex;
+  margin-left: 215px;
+  margin-right: 215px;
+}
+
+.our-command .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .our-command p {
   font-style: normal;
   font-weight: normal;
@@ -220,6 +259,7 @@ h4 {
 }
 
 footer {
+  display: block;
   background-color: #2f303a;
 }
 /*Портфолио*/
