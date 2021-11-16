@@ -23,6 +23,7 @@ body {
 .page-header {
   display: flex;
   align-items: center;
+  width: 1600px;
 }
 
 .logo {
@@ -48,6 +49,7 @@ body {
   display: block;
   margin-right: auto;
   margin-left: auto;
+  width: 1600px;
 
   background-color: #2f303a;
 }
@@ -94,6 +96,8 @@ body {
 }
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .list button:hover,
 .list button:focus {
@@ -252,7 +256,7 @@ h4 {
 
   color: var(--main-text-color);
 }
-.difference .item p {
+.difference p {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.714;
@@ -267,6 +271,9 @@ footer {
   background-color: #2f303a;
 }
 /*Портфолио*/
+.filtrs {
+  display: flex;
+}
 .filtr {
   background-color: #eeeeee;
 }
