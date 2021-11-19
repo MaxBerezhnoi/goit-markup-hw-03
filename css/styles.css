@@ -6,29 +6,48 @@
   --secondary-button-color: #f5f4fa;
   --secondary-links-color: #eeeeee;
 }
-
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margine: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+button {
+  cursor: pointer;
+}
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  outline: 2px solid tomato;
 }
 
 body {
   font-family: "Roboto", sans-serif;
   color: var(--second-title-color);
 }
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
 .page-header {
   display: flex;
   align-items: center;
-  width: 1600px;
 }
-
+nav {
+  display: flex;
+}
 .logo {
-  margin-left: 215px;
-
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
@@ -38,6 +57,10 @@ body {
   letter-spacing: 0.03em;
 
   color: var(--accent-color);
+}
+.header-navigation {
+  display: flex;
+  align-items: center;
 }
 .studio-black {
   color: #000000;
@@ -94,11 +117,7 @@ body {
 .site-nav a:focus {
   color: var(--accent-color);
 }
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+
 .list button:hover,
 .list button:focus {
   background-color: var(--accent-color);
@@ -111,7 +130,6 @@ body {
   margin-left: 50px;
 }
 .contacts a {
-  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -147,9 +165,6 @@ body {
   color: var(--accent-color);
 }
 
-button {
-  cursor: pointer;
-}
 .main-button {
   margin-top: 35px;
   margin-left: auto;
@@ -184,8 +199,8 @@ button {
 
 .differences {
   display: flex;
-  margin-left: 215px;
-  margin-right: 215px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .differences .item:not(:last-child) {
@@ -201,6 +216,7 @@ h2 {
   letter-spacing: 0.03em;
 
   color: var(--second-title-color);
+  text-align: center;
 }
 
 .differences .item h3 {
@@ -227,8 +243,7 @@ h4 {
 }
 .activites {
   display: flex;
-  margin-left: 215px;
-  margin-right: 215px;
+  margin: 0 auto;
 }
 
 .activites .item:not(:last-child) {
@@ -237,8 +252,7 @@ h4 {
 
 .our-command {
   display: flex;
-  margin-left: 215px;
-  margin-right: 215px;
+  margin: 0 auto;
 }
 
 .our-command .item:not(:last-child) {
@@ -268,7 +282,12 @@ h4 {
 
 footer {
   display: block;
+  margin: 0 auto;
   background-color: #2f303a;
+  max-width: 1600px;
+}
+.footer .logo {
+  margin-left: 215px;
 }
 /*Портфолио*/
 .filtrs {
