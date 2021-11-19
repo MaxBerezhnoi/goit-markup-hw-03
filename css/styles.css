@@ -292,9 +292,15 @@ footer {
 /*Портфолио*/
 .filtrs {
   display: flex;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
 }
 .filtr {
   background-color: #eeeeee;
+}
+.filtrs button:not(:last-child) {
+  margin-right: 8px;
 }
 .projects {
   display: flex;
