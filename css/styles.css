@@ -26,8 +26,8 @@ button {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
-  outline: 2px solid tomato;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 body {
@@ -36,17 +36,13 @@ body {
 }
 .list {
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .page-header {
   display: flex;
   align-items: center;
 }
-nav {
-  display: flex;
-}
+
 .logo {
   font-family: Raleway;
   font-style: normal;
@@ -61,6 +57,8 @@ nav {
 .header-navigation {
   display: flex;
   align-items: center;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .studio-black {
   color: #000000;
@@ -72,12 +70,13 @@ nav {
   display: block;
   margin-right: auto;
   margin-left: auto;
+  padding-top: 200px;
+  padding-bottom: 195px;
   width: 1600px;
 
   background-color: #2f303a;
 }
 .main-title {
-  padding-top: 200px;
   padding-left: auto;
   padding-right: auto;
 
@@ -118,11 +117,6 @@ nav {
   color: var(--accent-color);
 }
 
-.list button:hover,
-.list button:focus {
-  background-color: var(--accent-color);
-  color: var(--main-title-color);
-}
 .contacts {
   display: flex;
 }
@@ -130,9 +124,6 @@ nav {
   margin-left: 50px;
 }
 .contacts a {
-  padding-top: 32px;
-  padding-bottom: 32px;
-
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -146,6 +137,7 @@ nav {
 }
 .contacts-footer {
   margin-left: 215px;
+  margin-top: 20px;
 }
 .contacts-footer a {
   display: block;
@@ -201,22 +193,12 @@ nav {
   display: flex;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 94px;
+  margin-bottom: 94px;
 }
 
 .differences .item:not(:last-child) {
   margin-right: 30px;
-}
-
-h2 {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.667;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: var(--second-title-color);
-  text-align: center;
 }
 
 .differences .item h3 {
@@ -228,6 +210,29 @@ h2 {
   text-transform: uppercase;
 
   color: var(--second-title-color);
+}
+
+.differences .item p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.714;
+
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+
+h2 {
+  margin-bottom: 50px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.667;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--second-title-color);
+  text-align: center;
 }
 
 h4 {
@@ -243,7 +248,9 @@ h4 {
 }
 .activites {
   display: flex;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 94px;
 }
 
 .activites .item:not(:last-child) {
@@ -253,6 +260,7 @@ h4 {
 .our-command {
   display: flex;
   margin: 0 auto;
+  padding-bottom: 94px;
 }
 
 .our-command .item:not(:last-child) {
@@ -283,23 +291,46 @@ h4 {
 footer {
   display: block;
   margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #2f303a;
   max-width: 1600px;
 }
 .footer .logo {
   margin-left: 215px;
 }
+
 /*Портфолио*/
+
 .filtrs {
   display: flex;
   justify-content: center;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 56px;
 }
-.filtr {
-  background-color: #eeeeee;
+
+.list button {
+  border: none;
+  background-color: var(--secondary-button-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--second-title-color);
 }
-.filtrs button:not(:last-child) {
+.list button:hover,
+.list button:focus {
+  border: none;
+  background-color: var(--accent-color);
+  color: var(--main-title-color);
+}
+
+.filtrs li:not(:last-child) {
   margin-right: 8px;
 }
 .projects {
@@ -332,4 +363,8 @@ footer {
 .projects span:hover,
 .projects span:focus {
   color: var(--accent-color);
+}
+
+.portfolio {
+  margin: 94px auto 94px auto;
 }
