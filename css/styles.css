@@ -34,10 +34,14 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--second-title-color);
 }
+
 .list {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
 .page-header {
   display: flex;
   align-items: center;
@@ -57,8 +61,6 @@ body {
 .header-navigation {
   display: flex;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 .studio-black {
   color: #000000;
@@ -66,13 +68,17 @@ body {
 .studio-white {
   color: var(--main-title-color);
 }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .main-section {
   display: block;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 200px;
-  padding-bottom: 195px;
-  width: 1600px;
+  padding: 200px 0;
+  max-width: 1600px;
 
   background-color: #2f303a;
 }
@@ -163,6 +169,7 @@ body {
   margin-right: auto;
   padding: 10px 32px 10px 32px;
   background-color: var(--accent-color);
+  border: none;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -183,18 +190,15 @@ body {
   background: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-}
-
-.main-section {
-  padding-bottom: 195px;
+  border: none;
 }
 
 .differences {
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 94px;
-  margin-bottom: 94px;
+  /*margin-top: 94px;
+  margin-bottom: 94px;*/
 }
 
 .differences .item:not(:last-child) {
@@ -250,19 +254,30 @@ h4 {
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 94px;
+  /* margin-bottom: 94px;*/
 }
 
 .activites .item:not(:last-child) {
   margin-right: 30px;
 }
 
+.comand-section {
+  background-color: var(--secondary-button-color);
+}
+
 .our-command {
   display: flex;
   margin: 0 auto;
-  padding-bottom: 94px;
+  /*padding-bottom: 94px;*/
 }
 
+.our-command .item {
+  background-color: var(--main-title-color);
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 .our-command .item:not(:last-child) {
   margin-right: 30px;
 }
@@ -301,6 +316,9 @@ footer {
 }
 
 /*Портфолио*/
+.portfolio-header {
+  border-bottom: 1px solid #ececec;
+}
 
 .filtrs {
   display: flex;
@@ -308,6 +326,16 @@ footer {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 56px;
+}
+
+.filtr {
+  padding: 6px 22px 6px 22px;
+}
+.legend {
+  padding: 20px 24px 20px 24px;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
 
 .list button {
