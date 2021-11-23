@@ -197,8 +197,6 @@ a {
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  /*margin-top: 94px;
-  margin-bottom: 94px;*/
 }
 
 .differences .item:not(:last-child) {
@@ -228,10 +226,10 @@ a {
 
 h2 {
   margin-bottom: 50px;
-  font-style: normal;
+  ont-style: normal;
   font-weight: bold;
   font-size: 36px;
-  line-height: 1.667;
+  line-height: 1.167;
   text-align: center;
   letter-spacing: 0.03em;
 
@@ -254,7 +252,6 @@ h4 {
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  /* margin-bottom: 94px;*/
 }
 
 .activites .item:not(:last-child) {
@@ -368,6 +365,7 @@ footer {
 .projects-item {
   width: 370px;
   margin-right: 30px;
+  margin-bottom: 30px;
 }
 .projects-item:nth-child(3n) {
   margin-right: 0;
