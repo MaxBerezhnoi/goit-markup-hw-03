@@ -73,6 +73,9 @@ a {
   padding-bottom: 94px;
 }
 
+.x {
+  padding-top: 0;
+}
 .main-section {
   display: block;
   margin-right: auto;
